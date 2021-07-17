@@ -1,0 +1,168 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+@font-face 
+  font-family: 'Shlop'
+  src: url('./fonts/shlop.woff2')
+
+
+header
+  background: url('./images/bg2.jpg')
+  background-repeat: no-repeat
+  height: 40vh
+  background-size: cover
+  background-position: center
+
+header:before
+  content: ""
+  width: 100%
+  height: 40vh
+  position: absolute
+  top: 0
+  left: 0
+  background-image: linear-gradient(90deg, #1f2937, #111927)
+  opacity: 0.7
+
+.container
+  width: 80%
+  margin: auto
+  height: 100%
+
+.content
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: relative
+
+.title
+  padding: 10px
+  color: #82bf45
+  font-size: 5rem
+  font-family: Shlop
+
+.text
+  color:#17a3ac
+  font-size: 1.1rem
+  font-family: Shlop
+
+.characters
+  margin-top: 20px
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+.box
+  width: 22.5%
+  background-color: #1f2937
+  margin: 10px
+  border-radius: 10px
+  box-shadow: 4px 5px #d9e5d6
+  display: flex
+
+  img
+    max-width: 50%
+    height: auto
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+  
+  .character
+    width: 100%
+    margin: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .name
+      font-family: Shlop
+      font-size: 2rem
+      color: #828f45
+    
+    .specie
+      text-align: center
+      padding: 5px
+      background-color: #364150
+      color:  #fff
+      border-radius: 40px
+      text-transform: uppercase
+      font-size: 1.25rem
+      margin: 3px 0
+      font-family: Shlop
+
+    .status
+      text-align: center
+      padding: 5px
+      background-color: #364150
+      color:  #fff
+      border-radius: 40px
+      text-transform: uppercase
+      font-size: .8rem
+      margin: 3px 0
+      font-family: Shlop
+
+.pagination
+  display: flex
+  justify-content: center
+
+  .prev
+    padding: .75rem 1.5rem
+    border: none
+    outline: none
+    border-radius: 10px
+    background-color: #82bf45
+    color: #1f2937
+    font-family: Shlop
+    margin: 0 15px
+    font-size: 2rem
+  .next
+    padding: .75rem 1.5rem
+    border: none
+    outline: none
+    border-radius: 10px
+    background-color: #82bf45
+    color: #1f2937
+    font-family: Shlop
+    margin: 0 15px
+    font-size: 2rem
+
+@media screen and ( max-width: 1588px )
+  .container
+    width:85%
+  .box
+    .character
+      .name
+        font-size: 1.6rem
+
+@media screen and ( max-width: 1450px )
+  .container
+    width: 90%
+
+@media screen and ( max-width: 1300px )
+  .container
+    width: 95%
+
+@media screen and ( max-width: 1230px )
+  .box
+    width: 45%
+  .container
+    width: 100%
+
+@media screen and ( max-width: 768px )
+  .box
+    width: 100%
+  .container
+    width: 85% 
+  
+@media screen and ( max-width: 450px )
+  .container
+    width: 100%
+  .content
+    width: 90%
+    text-align: center
+    margin: auto
+  
